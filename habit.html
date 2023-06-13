@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" type="text/css" href="habit.css">
+</head>
+
+<body>
+<h1>Habit Tracker</h1>
+<h2>Weekly Habit Tracker</h2>
+<table id="habitTable">
+    <thead>
+        <tr>
+        <th>Habit</th>
+        <th>Time</th>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Progress</th>
+        </tr>
+    </thead>
+    <!-- Add rows directly in HTML -->
+    <tbody>
+        <tr>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
+        <td><button onclick="toggleDay(0, 0)">-</button></td>
+        <td><button onclick="toggleDay(0, 1)">-</button></td>
+        <td><button onclick="toggleDay(0, 2)">-</button></td>
+        <td><button onclick="toggleDay(0, 3)">-</button></td>
+        <td><button onclick="toggleDay(0, 4)">-</button></td>
+        <td><button onclick="toggleDay(0, 5)">-</button></td>
+        <td><button onclick="toggleDay(0, 6)">-</button></td>
+        <td>0%</td>
+        </tr>
+        
+    </tbody>
+    <!-- Add more rows as needed -->
+</table>
+<button id="addRowBtn">Add New Habbit</button>
+
+<h2>Overall Progress</h2>
+
+<table id="streakTable">
+    <thead>
+        <tr>
+            <th>Current Streak</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="streakValue"></td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="completeTable">
+    <thead>
+        <tr>
+            <th>Complete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="completedValue"></td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="failedTable">
+    <thead>
+        <tr>
+            <th>Failed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="failedValue"></td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="avgProgress">
+    <thead>
+        <tr>
+            <th>Avarage Progress</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="avgProgressValue"></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>My Habit Notes</h2>
+<table id="noteTable">
+    <thead>
+        <tr>
+        <th>Habit</th>
+        <th>Time / Date</th>
+        <th>Notes</th>
+        </tr>
+    </thead>
+    <!-- Add rows directly in HTML -->
+    <tbody>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        
+    </tbody>
+    <!-- Add more rows as needed -->
+</table>
+
+<script src="habit.js"></script>
+
+</body>
+
+</html>
